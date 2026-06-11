@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — GKJ PENARUBAN</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Font Awesome 4 -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SIDEBAR
+═══════════════════════════════════════════════════════════ -->
+<aside class="main-sidebar" id="mainSidebar">
+
+    <!-- Brand -->
+    <div class="sidebar-header">
+        <div class="brand-icon">G</div>
+        <span class="brand-name">GKJ PENARUBAN</span>
+    </div>
+
+    <!-- User Panel -->
+    <div class="sidebar-user">
+        <div class="user-icon"><i class="fa fa-user"></i></div>
+        <div>
+            <span class="user-name">Administrator</span>
+            <span class="user-role">Admin</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <ul class="sidebar-nav">
+
+        <!-- Dashboard -->
+        <li class="active">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <!-- Jadwal Ibadah -->
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-calendar"></i>
+                <span>Jadwal Ibadah</span>
+                <i class="fa fa-angle-left arrow"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Data Jadwal
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Tambah Jadwal
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Program Kerja -->
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-tasks"></i>
+                <span>Program Kerja</span>
+                <i class="fa fa-angle-left arrow"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Data Komisi
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Program Kerja
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o"></i> Tambah Program
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- WhatsApp Gateway -->
+        <li>
+            <a href="#">
+                <i class="fa fa-whatsapp"></i>
+                <span>WhatsApp Gateway</span>
+            </a>
+        </li>
+
+        <!-- Pengumuman -->
+        <li>
+            <a href="#">
+                <i class="fa fa-bullhorn"></i>
+                <span>Pengumuman</span>
+            </a>
+        </li>
+
+        <!-- Backup -->
+        <li>
+            <a href="#">
+                <i class="fa fa-database"></i>
+                <span>Backup</span>
+            </a>
+        </li>
+
+        <!-- Keluar -->
+        <li>
+            <a href="#" onclick="return confirm('Yakin ingin keluar?')">
+                <i class="fa fa-sign-out"></i>
+                <span>Keluar</span>
+            </a>
+        </li>
+
+    </ul>
+</aside>
+<!-- ═══════════════════════════════════════════════════════════
+     /SIDEBAR
+═══════════════════════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     TOP NAVBAR
+═══════════════════════════════════════════════════════════ -->
+<header class="main-header" id="mainHeader">
+    <button class="toggle-btn" id="sidebarToggle" type="button"
+            title="Toggle Sidebar">
+        <i class="fa fa-bars"></i>
+    </button>
+    <button class="close-btn" id="closeAppBtn" type="button" title="Tutup">
+        <i class="fa fa-times"></i>
+    </button>
+</header>
+<!-- ═══════════════════════════════════════════════════════════
+     /TOP NAVBAR
+═══════════════════════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTENT WRAPPER
+═══════════════════════════════════════════════════════════ -->
+<div class="content-wrapper" id="contentWrapper">
+
+    <!-- Page Heading -->
+    <div class="page-header-row">
+        <h1 class="page-title">DASHBOARD</h1>
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">/</span>
+            <span class="current">Dashboard</span>
+        </nav>
+    </div>
+
+    <!-- ── ROW 1 ─────────────────────────────────────── -->
+    <div class="row">
+
+        <!-- Jadwal Ibadah -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>12</h3>
+                    <p>JADWAL IBADAH</p>
+                </div>
+                <div class="icon"><i class="fa fa-calendar"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Ibadah Minggu Ini -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>3</h3>
+                    <p>IBADAH MINGGU INI</p>
+                </div>
+                <div class="icon"><i class="fa fa-clock-o"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Program Kerja -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>24</h3>
+                    <p>PROGRAM KERJA</p>
+                </div>
+                <div class="icon"><i class="fa fa-tasks"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Komisi -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-blue">
+                <div class="inner">
+                    <h3>6</h3>
+                    <p>KOMISI</p>
+                </div>
+                <div class="icon"><i class="fa fa-users"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div><!-- /.row 1 -->
+
+    <!-- ── ROW 2 ─────────────────────────────────────── -->
+    <div class="row">
+
+        <!-- Program Berjalan -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>8</h3>
+                    <p>PROGRAM BERJALAN</p>
+                </div>
+                <div class="icon"><i class="fa fa-check-circle"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Program Selesai -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>10</h3>
+                    <p>PROGRAM SELESAI</p>
+                </div>
+                <div class="icon"><i class="fa fa-flag-checkered"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Pengumuman -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-blue">
+                <div class="inner">
+                    <h3>5</h3>
+                    <p>PENGUMUMAN</p>
+                </div>
+                <div class="icon"><i class="fa fa-bullhorn"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- User -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>4</h3>
+                    <p>USER</p>
+                </div>
+                <div class="icon"><i class="fa fa-user-secret"></i></div>
+                <a href="#" class="small-box-footer">
+                    More <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div><!-- /.row 2 -->
+
+    <!-- ── ACTION BAR ────────────────────────────────── -->
+    <div class="action-bar">
+        <a href="#" class="btn btn-success btn-sm">
+            <i class="fa fa-bullhorn"></i>&nbsp; PENGUMUMAN
+        </a>
+        <a href="#" class="btn btn-primary btn-sm">
+            <i class="fa fa-database"></i>&nbsp; BACKUP
+        </a>
+    </div>
+    <!-- /.action-bar -->
+
+</div>
+<!-- ═══════════════════════════════════════════════════════════
+     /CONTENT WRAPPER
+═══════════════════════════════════════════════════════════ -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Bootstrap 3 JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Dashboard JS -->
+<script src="assets/js/dashboard.js"></script>
+
+</body>
+</html>
